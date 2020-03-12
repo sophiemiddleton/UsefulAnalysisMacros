@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 file = uproot.open("../RootFiles/CosmicsWeirdShift.root")
 
-cosmics = file["CosmicTrackDetails"]["cosmic_tree"] # opens the 'trkana' tree in the 'TrkAnaNeg' folder
+cosmics = file["CosmicTrackDetails"]["cosmic_tree"] 
 
 df = cosmics.pandas.df(flatten=True)
 
